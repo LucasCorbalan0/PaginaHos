@@ -1,0 +1,148 @@
+{
+  "login": [
+    {
+      "id": 1,
+      "user": "admin",
+      "contrasenia": "admin123"
+    },
+    {
+      "id": 2,
+      "user": "doctor1",
+      "contrasenia": "doc123"
+    },
+    {
+      "id": 3,
+      "user": "doctor2",
+      "contrasenia": "doc456"
+    },
+    {
+      "id": 4,
+      "user": "recepcion",
+      "contrasenia": "recep123"
+    }
+  ],
+  "doctores": [
+    {
+      "id": 1,
+      "nombre": "Carlos",
+      "apellido": "Rodríguez",
+      "edad": 45,
+      "dni": "12345678",
+      "profesion": "Cardiología"
+    },
+    {
+      "id": 2,
+      "nombre": "Ana",
+      "apellido": "Martínez",
+      "edad": 38,
+      "dni": "23456789",
+      "profesion": "Pediatría"
+    },
+    {
+      "id": 3,
+      "nombre": "Luis",
+      "apellido": "García",
+      "edad": 52,
+      "dni": "34567890",
+      "profesion": "Medicina General"
+    },
+    {
+      "id": 4,
+      "nombre": "María",
+      "apellido": "López",
+      "edad": 41,
+      "dni": "45678901",
+      "profesion": "Dermatología"
+    },
+    {
+      "id": 5,
+      "nombre": "Roberto",
+      "apellido": "Fernández",
+      "edad": 48,
+      "dni": "56789012",
+      "profesion": "Traumatología"
+    }
+  ],
+  "pacientes": [
+    {
+      "id": 1,
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "dni": "20123456",
+      "edad": 35,
+      "enfermedad": "Hipertensión arterial"
+    },
+    {
+      "id": 2,
+      "nombre": "María",
+      "apellido": "González",
+      "dni": "30234567",
+      "edad": 28,
+      "enfermedad": "Diabetes tipo 2"
+    },
+    {
+      "id": 3,
+      "nombre": "Pedro",
+      "apellido": "Sánchez",
+      "dni": "25345678",
+      "edad": 42,
+      "enfermedad": "Artritis reumatoide"
+    },
+    {
+      "id": 4,
+      "nombre": "Laura",
+      "apellido": "Morales",
+      "dni": "28456789",
+      "edad": 31,
+      "enfermedad": "Migraña crónica"
+    },
+    {
+      "id": 5,
+      "nombre": "Carlos",
+      "apellido": "Ruiz",
+      "dni": "22567890",
+      "edad": 55,
+      "enfermedad": "Colesterol alto"
+    },
+    {
+      "id": 6,
+      "nombre": "Ana",
+      "apellido": "Torres",
+      "dni": "26678901",
+      "edad": 24,
+      "enfermedad": "Asma bronquial"
+    },
+    {
+      "id": 7,
+      "nombre": "Miguel",
+      "apellido": "Herrera",
+      "dni": "29789012",
+      "edad": 38,
+      "enfermedad": "Gastritis crónica"
+    },
+    {
+      "id": 8,
+      "nombre": "Carmen",
+      "apellido": "Jiménez",
+      "dni": "27890123",
+      "edad": 46,
+      "enfermedad": "Fibromialgia"
+    },
+    {
+      "id": 9,
+      "nombre": "Diego",
+      "apellido": "Vega",
+      "dni": "24901234",
+      "edad": 33,
+      "enfermedad": "Ansiedad generalizada"
+    },
+    {
+      "id": 10,
+      "nombre": "Lucía",
+      "apellido": "Castro",
+      "dni": "21012345",
+      "edad": 29,
+      "enfermedad": "Hipotiroidismo"
+    }
+  ]
+}

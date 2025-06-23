@@ -1,6 +1,6 @@
 import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import { LOGIN } from '../Routers/router';
+import { DOCTORES, LOGIN, PACIENTES } from '../Routers/router';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -9,6 +9,7 @@ const Header = () => {
     <div className="header bg-primary p-3 d-flex justify-content-between align-items-center">
       <div className="text-white fw-bold fs-4">
         Hospital San Juan
+
       </div>
       
       <Button 

@@ -10,7 +10,7 @@ const LoginPage = () => {
         <Login />
         <Footer />
     </div>
-  )
+  ) 
 }
 
 export default LoginPage

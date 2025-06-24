@@ -46,25 +46,27 @@ function Login() {
   };
 
   return (
-    <div className="login-container">
-      <form className="login-form" onSubmit={manejarEnvio}>
-        <h2>Iniciar sesión</h2>
-        <input
-          type="text"
-          placeholder="Usuario"
-          value={usuario}
-          onChange={(e) => setUsuario(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Contraseña"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-        <button  type="submit">Ingresar</button>
-      </form>
+    <div className="login-page">
+      <div className="login-container">
+        <form className="login-form" onSubmit={manejarEnvio}>
+          <h2>Iniciar sesión</h2>
+          <input
+            type="text"
+            placeholder="Usuario"
+            value={usuario}
+            onChange={(e) => setUsuario(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Contraseña"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+          <button type="submit">Ingresar</button>
+        </form>
+      </div>
     </div>
   );
 }

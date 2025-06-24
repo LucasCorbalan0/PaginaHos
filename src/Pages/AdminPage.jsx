@@ -1,13 +1,17 @@
 import React from 'react'
 import Header from '../Components/Header'
-import CrearTable from '../Components/CRUD/CrearTable'
+
+import DoctorTable from '../Components/CRUD/DoctorTable'
+
+
+
 import Footer from '../Components/Footer'
 
 const AdminPage = () => {
   return (
     <div>
         <Header/>
-        <CrearTable/>
+        <DoctorTable/>
         <Footer/>
     </div>
   )

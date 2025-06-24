@@ -1,83 +1,112 @@
-/* Login Container */
-.login-container {
+
+
+/**
+ * Contenedor principal de la página de login
+ * Ocupa toda la altura de la pantalla con un fondo de imagen
+ */
+.login-page {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  min-height: 100vh;            /* Altura mínima de toda la ventana */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
-  background: #a5dcfc;
-  padding: 20px;
+  justify-content: center;      /* Centrado horizontal */
+  align-items: center;         /* Centrado vertical */
+  background: url('https://i.pinimg.com/1200x/b4/77/8c/b4778c318426a3f81edbbcdad3fb3561.jpg');
+  background-size: cover;      /* Cubre todo el espacio disponible */
+  padding: 20px;               /* Espaciado en los bordes */
 }
 
-/* Login Form */
+/**
+ * Contenedor del formulario
+ * Limita el ancho máximo y centra el contenido
+ */
+.login-container {
+  width: 100%;
+  max-width: 400px;            /* Ancho máximo del contenedor */
+}
+
+/**
+ * Estilos del formulario
+ * Fondo blanco semi-transparente con sombra
+ */
 .login-form {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background: rgba(179, 253, 145, 0.1);  /* el ultimo es la opacidad */
+  padding: 30px;    /* Espaciado interno */
+  border: 2px solid #636060;  /* Borde */                      
+  border-radius: 15px;                  /* Esquinas redondeadas */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);  /* Sombra sutil */
   width: 100%;
-  max-width: 400px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;             /* Transición suave para efectos hover */
 }
 
+/* Efecto al pasar el ratón sobre el formulario */
 .login-form:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);           /* Elevación sutil */
 }
 
+/**
+ * Título del formulario
+ */
 .login-form h2 {
-  margin: 0 0 2rem 0;
-  color: #2c3e50;
   text-align: center;
-  font-size: 1.8rem;
-  font-weight: 600;
+  color: #141414;                       /* Color de texto oscuro */
+  margin: 0 0 32px 0;                  /* Margen inferior */
+  font-size: 24px;
+  font-weight: 700;                     /* Negrita */
+  text-transform: uppercase;            /* Texto en mayúsculas */
+  letter-spacing: 1px;                  /* Espaciado entre letras */
 }
 
-/* Form Inputs */
+/**
+ * Campos de entrada de texto
+ */
 .login-form input {
+  background-color: rgba(154, 194, 136, 0.2);                 /* Borde azul al enfocar */
+  color: #141414;
   width: 100%;
-  padding: 0.8rem 1rem;
-  margin-bottom: 1.2rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  box-sizing: border-box;
+  padding: 12px 15px;                    /* Espaciado interno */
+  margin-bottom: 24px;                  /* Espaciado inferior */
+  border: 2px solid #e0e0e0;            /* Borde */
+  border-radius: 8px;                   /* Esquinas redondeadas */
+  font-size: 16px;                      /* Tamaño de fuente legible */
+  transition: all 0.3s ease;             /* Transición suave */
 }
 
+/* Estilo cuando el input está enfocado */
+.login-form input:focus {
+  border-color: #3498db;                 /* Borde azul al enfocar */
+  outline: none;                        /* Quita el contorno por defecto */
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);  /* Sombra al enfocar */
+}
 
-/* Submit Button */
+/* Estilos para los placeholders */
+.login-form input::placeholder {
+  color: #e6f1f1;                       /* Color gris para el placeholder */
+  opacity: 1;                           /* Asegura que se vea la opacidad completa */
+}
+
+/**
+ * Botón de envío
+ */
 .login-form button {
   width: 100%;
-  padding: 0.9rem;
-  background: #3498db;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  padding: 16px;
+  background-color: rgb(154, 194, 136, 0.2);             /* Color azul */
+  color: black;                        /* Texto blanco */
+  border: 1px solid #e0e0e0;                         /* Sin borde */
+  border-radius: 8px;                   /* Esquinas redondeadas */
+  font-size: 16px;
+  cursor: pointer;                      /* Cursor tipo puntero */
+  transition: all 0.3s ease;             /* Transición suave */
 }
 
+/* Efecto hover del botón */
 .login-form button:hover {
-  background: #2980b9;
-  transform: translateY(-2px);
+  transform: translateY(-2px);           /* Elevación sutil */
+  background-color: rgba(154, 194, 136, 0.2);             /* Color azul más oscuro */
 }
 
+/* Efecto al hacer clic en el botón */
 .login-form button:active {
-  transform: translateY(0);
+  transform: translateY(0);              /* Vuelve a su posición original */
 }
 
-
-  
-  .login-form h2 {
-    font-size: 40px;
-    margin-bottom: 40px;
-  }
-  
-  .login-form input,
-  .login-form button {
-    padding: 12px 15px;
-  }

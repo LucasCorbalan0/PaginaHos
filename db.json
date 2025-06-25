@@ -53,11 +53,6 @@
       "edad": 48,
       "dni": "56789012",
       "profesion": "Traumatología"
-    },
-    {
-      "id": "609f",
-      "nombre": "Sergio",
-      "especialidad": "Ghezzi"
     }
   ],
   "pacientes": [

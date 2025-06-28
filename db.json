@@ -23,80 +23,29 @@
   ],
   "doctores": [
     {
-      "id": "2",
-      "nombre": "Ana",
-      "apellido": "Martínez",
-      "edad": 38,
-      "dni": "23456789",
-      "profesion": "Pediatría"
-    },
-    {
       "id": "3",
-      "nombre": "Luis",
-      "apellido": "García",
-      "edad": 52,
-      "dni": "34567890",
-      "profesion": "Medicina General"
+      "nombre": "yea",
+      "apellido": "Ruiz",
+      "especialidad": "Cardiología"
     },
     {
       "id": "4",
-      "nombre": "María",
-      "apellido": "López",
-      "edad": 41,
-      "dni": "45678901",
-      "profesion": "Dermatología"
+      "nombre": "Ana",
+      "apellido": "Torres",
+      "especialidad": "Pediatría"
     },
     {
       "id": "5",
-      "nombre": "Roberto",
-      "apellido": "Fernández",
-      "edad": 48,
-      "dni": "56789012",
-      "profesion": "Traumatología"
-    },
-    {
-      "id": "609f",
-      "nombre": "Sergio",
-      "especialidad": "Ghezzi"
+      "nombre": "Miguel",
+      "apellido": "Herrera",
+      "especialidad": "Cardiología"
     }
   ],
   "pacientes": [
     {
-      "id": "1",
-      "nombre": "Juan",
-      "apellido": "Pérez",
-      "dni": "20123456",
-      "edad": 35,
-      "enfermedad": "Hipertensión arterial"
-    },
-    {
-      "id": "2",
-      "nombre": "María",
-      "apellido": "González",
-      "dni": "30234567",
-      "edad": 28,
-      "enfermedad": "Diabetes tipo 2"
-    },
-    {
-      "id": "3",
-      "nombre": "Pedro",
-      "apellido": "Sánchez",
-      "dni": "25345678",
-      "edad": 42,
-      "enfermedad": "Artritis reumatoide"
-    },
-    {
-      "id": "4",
-      "nombre": "Laura",
-      "apellido": "Morales",
-      "dni": "28456789",
-      "edad": 31,
-      "enfermedad": "Migraña crónica"
-    },
-    {
       "id": "5",
       "nombre": "Carlos",
-      "apellido": "Ruiz",
+      "apellido": "OLA",
       "dni": "22567890",
       "edad": 55,
       "enfermedad": "Colesterol alto"
@@ -132,14 +81,6 @@
       "dni": "24901234",
       "edad": 33,
       "enfermedad": "Ansiedad generalizada"
-    },
-    {
-      "id": "10",
-      "nombre": "Lucía",
-      "apellido": "Castro",
-      "dni": "21012345",
-      "edad": 29,
-      "enfermedad": "Hipotiroidismo"
     }
   ]
 }

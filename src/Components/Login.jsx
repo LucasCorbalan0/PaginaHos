@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { URL_LOGIN } from "../Constants/endpoints";
 import { useNavigate } from "react-router-dom";
-import { ADMIN } from "../Routers/router";
+import { DOCTORES } from "../Routers/router";
 import "../CSS/Login.css";
 
 function Login() {
@@ -35,7 +35,7 @@ function Login() {
       
       if (usuarioEncontrado) {
         alert("Inicio de sesión exitoso");
-        userNavigate(ADMIN);
+        userNavigate(DOCTORES);
       } else {
         alert("Usuario o contraseña incorrectos");
       }

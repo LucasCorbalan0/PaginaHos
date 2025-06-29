@@ -190,14 +190,14 @@ const PacientesTable = () => {
                 <td>{pac.dni}</td>
                 <td>
                   <Button
-                    variant="info"
+                    variant="outline-info"
                     className="m-2 p-2"
                     onClick={() => handleVer(pac.id)}
                   >
                     Ver
                   </Button>
                   <Button
-                    variant="warning"
+                    variant="outline-success"
                     className="m-2 p-2"
                     onClick={() => navigate(`${EDITARPACIENTES}/${pac.id}`)}
                   >
@@ -205,7 +205,7 @@ const PacientesTable = () => {
                   </Button>
                   {/* Botón para eliminar. Su onClick llama a 'handleEliminar' pasándole el 'id' del paciente de esta fila. */}
                   <Button
-                    variant="danger"
+                    variant="outline-danger"
                     className="m-2 p-2"
                     onClick={() => handleEliminar(pac.id)}
                   >

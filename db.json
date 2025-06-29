@@ -23,41 +23,37 @@
   ],
   "doctores": [
     {
+      "id": "1",
+      "nombre": "Nicolás Gabriel ",
+      "apellido": "Cutone",
+      "especialidad": "Cardiología"
+    },
+    {
+      "id": "2",
+      "nombre": "Agustin",
+      "apellido": "flores",
+      "especialidad": "pediatria"
+    },
+    {
       "id": "3",
-      "nombre": "yea",
-      "apellido": "Ruiz",
-      "especialidad": "Cardiología"
-    },
-    {
-      "id": "4",
-      "nombre": "Ana",
-      "apellido": "Torres",
-      "especialidad": "Pediatría"
+      "nombre": "camila daiana",
+      "apellido": "Cuello",
+      "especialidad": "odontologia"
     },
     {
       "id": "5",
-      "nombre": "Miguel",
-      "apellido": "Herrera",
-      "especialidad": "Cardiología"
-    }
-  ],
-  "pacientes": [
-    {
-      "id": "5",
-      "nombre": "Carlos",
-      "apellido": "OLA",
-      "dni": "22567890",
-      "edad": 55,
-      "enfermedad": "Colesterol alto"
+      "nombre": "María soledad ",
+      "apellido": "flores",
+      "especialidad": "Ginecologa"
     },
     {
       "id": "6",
-      "nombre": "Ana",
-      "apellido": "Torres",
-      "dni": "26678901",
-      "edad": 24,
-      "enfermedad": "Asma bronquial"
-    },
+      "nombre": "Valentina",
+      "apellido": "Pereyra",
+      "especialidad": "Partera"
+    }
+  ],
+  "pacientes": [
     {
       "id": "7",
       "nombre": "Miguel",
@@ -73,14 +69,6 @@
       "dni": "27890123",
       "edad": 46,
       "enfermedad": "Fibromialgia"
-    },
-    {
-      "id": "9",
-      "nombre": "Diego",
-      "apellido": "Vega",
-      "dni": "24901234",
-      "edad": 33,
-      "enfermedad": "Ansiedad generalizada"
     }
   ]
 }

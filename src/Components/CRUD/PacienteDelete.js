@@ -8,6 +8,11 @@ import { URL_PACIENTES } from '../../Constants/endpoints';
  * @param {function} onComplete - La función de devolución de llamada que se ejecuta al completarse la solicitud.
  */
 export const eliminarPaciente = async (id, onComplete) => {
+  // Pregunta confirmación antes de eliminar
+  if (!window.confirm("¿Estás seguro que querés eliminar este paciente?")) {
+    return; // Si el usuario cancela, se sale sin hacer nada
+  }
+
   try {
     // Realiza la solicitud DELETE a la URL de la API de pacientes con el ID del paciente.
     const response = await axios.delete(`${URL_PACIENTES}/${id}`);

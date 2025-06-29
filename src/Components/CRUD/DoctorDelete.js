@@ -8,6 +8,9 @@ import { URL_DOCTORES } from '../../Constants/endpoints';
  * @param {function} onComplete - La función de devolución de llamada que se ejecuta al completarse la solicitud.
  */
 export const eliminarDoctor = async (id, onComplete) => {
+  if(!window.confirm('¿Estas seguro que quieres eliminar este doctor?')) {
+    return; // Si el usuario cancela, se sale sin hacer nada
+  }
   try {
     // Realiza la solicitud DELETE a la URL de la API de doctores con el ID del doctor.
     const response = await axios.delete(`${URL_DOCTORES}/${id}`);

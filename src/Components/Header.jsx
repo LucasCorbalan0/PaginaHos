@@ -37,7 +37,7 @@ const Header = () => {
       case DOCTORES:
         return (
           <Button
-            variant="danger"
+            variant="outline-light"
             onClick={handleLogout}
           >
             <i className="bi bi-box-arrow-right me-2"></i>
@@ -54,13 +54,14 @@ const Header = () => {
             <Button
               variant="outline-light"
               className="me-2" // Margen a la derecha para separar los botones.
+              style={{ marginLeft: '960px' }} // Estilo adicional para margen derecho.
               onClick={() => navigate(DOCTORES)} // El botón "Volver" lleva a la página de doctores.
             >
               <i></i>
               Volver
             </Button>
             <Button
-              variant="danger" // Un color diferente para destacar la acción de cerrar sesión.
+              variant="outline-light" // Un color diferente para destacar la acción de cerrar sesión.
               onClick={handleLogout}
             >
               <i className="bi bi-box-arrow-right me-2"></i>

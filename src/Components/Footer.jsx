@@ -120,7 +120,7 @@ const Footer = () => {
     color: "#fff",
     border: "none",
     borderRadius: "50%",
-    fontSize: "20px",
+    fontSize: "35px",
     cursor: "pointer",
     boxShadow: "0 6px 15px rgba(0, 123, 255, 0.4)",
     zIndex: "1000",
@@ -238,7 +238,8 @@ const Footer = () => {
         }}
         aria-label="Volver arriba"
       >
-        ⬆️
+      
+        ⬆
       </button>
     </>
   )

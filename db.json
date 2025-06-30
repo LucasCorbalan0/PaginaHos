@@ -26,7 +26,7 @@
       "id": "1",
       "nombre": "Nicolás Gabriel ",
       "apellido": "Cutone",
-      "especialidad": "Cardiología"
+      "especialidad": "Cardiologíaa"
     },
     {
       "id": "2",
@@ -45,19 +45,13 @@
       "nombre": "María soledad ",
       "apellido": "flores",
       "especialidad": "Ginecologa"
-    },
-    {
-      "id": "6",
-      "nombre": "Valentina",
-      "apellido": "Pereyra",
-      "especialidad": "Partera"
     }
   ],
   "pacientes": [
     {
       "id": "7",
       "nombre": "Miguel",
-      "apellido": "Herrera",
+      "apellido": "Herreraaa",
       "dni": "29789012",
       "edad": 38,
       "enfermedad": "Gastritis crónica"
@@ -69,6 +63,12 @@
       "dni": "27890123",
       "edad": 46,
       "enfermedad": "Fibromialgia"
+    },
+    {
+      "id": "9",
+      "nombre": "Nicolás",
+      "apellido": "santucho",
+      "dni": "43002496"
     }
   ]
 }

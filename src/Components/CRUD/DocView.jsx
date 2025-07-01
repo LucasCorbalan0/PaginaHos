@@ -146,6 +146,22 @@ const DocView = () => {
                 {doctor.especialidad}
               </Col>
             </Row>
+            <Row style={rowStyle}>
+              <Col md={4} style={labelStyle}>
+                Contacto:
+              </Col>
+              <Col md={8} style={valueStyle}>
+                {doctor.contacto}
+              </Col>
+            </Row>
+            <Row style={rowStyle}>
+              <Col md={4} style={labelStyle}>
+                Dirección:
+              </Col>
+              <Col md={8} style={valueStyle}>
+                {doctor.direccion}
+              </Col>
+            </Row>
 
             <div className="d-flex justify-content-end mt-4">
               <Button variant="primary" onClick={() => navigate(DOCTORES)} style={buttonStyle}>

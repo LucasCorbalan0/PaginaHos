@@ -22,7 +22,9 @@ const DocEdit = () => {
   const [formData, setFormData] = useState({
     nombre: '',
     apellido: '',
-    especialidad: ''
+    especialidad: '',
+    contacto: '',
+    direccion: ''
   });
 
   // --- EFECTO PARA CARGAR DATOS ---
@@ -126,6 +128,26 @@ const DocEdit = () => {
                 type="text"
                 name="especialidad"
                 value={formData.especialidad}
+                onChange={handleChange}
+                required
+              />
+            </Form.Group>
+            <Form.Group className="mb-3">
+              <Form.Label>Contacto</Form.Label>
+              <Form.Control
+                type="text"
+                name="contacto"
+                value={formData.contacto}
+                onChange={handleChange}
+                required
+              />
+            </Form.Group>
+            <Form.Group className="mb-3">
+              <Form.Label>Dirección</Form.Label>
+              <Form.Control
+                type="text"
+                name="direccion"
+                value={formData.direccion}
                 onChange={handleChange}
                 required
               />

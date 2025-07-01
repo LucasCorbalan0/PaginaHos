@@ -21,7 +21,10 @@ const PaciEdit = () => {
   const [formData, setFormData] = useState({
     nombre: '',
     apellido: '',
-    dni: ''
+    dni: '',
+    contacto: '',
+    direccion: ''
+    
   });
 
   // --- EFECTO PARA CARGAR LOS DATOS INICIALES ---
@@ -127,7 +130,27 @@ const PaciEdit = () => {
                 required
               />
             </Form.Group>
-
+            <Form.Group className="mb-3">
+              <Form.Label>Contacto</Form.Label>
+              <Form.Control
+                type="text"
+                name="contacto"
+                value={formData.contacto}
+                onChange={handleChange}
+                required
+              />
+            </Form.Group>
+            <Form.Group className="mb-3">
+              <Form.Label>Direccion</Form.Label>
+              <Form.Control
+                type="text"
+                name="direccion"
+                value={formData.direccion}
+                onChange={handleChange}
+                required
+              />
+            </Form.Group>
+            
             {/* El botón principal que envía el formulario. */}
             <Button variant="primary" type="submit">
               Guardar Cambios

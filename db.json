@@ -26,49 +26,62 @@
       "id": "1",
       "nombre": "Nicolás Gabriel ",
       "apellido": "Cutone",
-      "especialidad": "Cardiologíaa"
+      "especialidad": "Cardiologíaa",
+      "contacto": "3819937430",
+      "direccion": "Banda Del Rio Sali"
     },
     {
       "id": "2",
       "nombre": "Agustin",
       "apellido": "flores",
-      "especialidad": "pediatria"
+      "especialidad": "pediatria",
+      "contacto": "3815543079",
+      "direccion": "san juan 565 SMT"
     },
     {
       "id": "3",
       "nombre": "camila daiana",
       "apellido": "Cuello",
-      "especialidad": "odontologia"
+      "especialidad": "odontologia",
+      "contacto": "3815543079",
+      "direccion": "san juan 390"
     },
     {
       "id": "5",
       "nombre": "María soledad ",
       "apellido": "flores",
-      "especialidad": "Ginecologa"
+      "especialidad": "Ginecologa",
+      "contacto": "3819937430",
+      "direccion": "Las piedras 231 "
     }
   ],
   "pacientes": [
     {
-      "id": "7",
-      "nombre": "Miguel",
-      "apellido": "Herreraaa",
-      "dni": "29789012",
-      "edad": 38,
-      "enfermedad": "Gastritis crónica"
-    },
-    {
-      "id": "8",
-      "nombre": "Carmen",
-      "apellido": "Jiménez",
-      "dni": "27890123",
-      "edad": 46,
-      "enfermedad": "Fibromialgia"
-    },
-    {
-      "id": "9",
+      "id": "1",
       "nombre": "Nicolás",
-      "apellido": "santucho",
-      "dni": "43002496"
+      "apellido": "Cutone",
+      "dni": "44438952",
+      "contacto": "3815548990",
+      "Direccion": "Banda Del Rio Sali",
+      "direccion": "Banda Del Rio Sali"
+    },
+    {
+      "id": "2",
+      "nombre": "Gabriel",
+      "apellido": "rojas",
+      "dni": "23556789",
+      "contacto": "3815543079",
+      "Direccion": "san juan 771 SMT",
+      "direccion": "Las talitas SMT"
+    },
+    {
+      "id": "3",
+      "nombre": "Alfonzo",
+      "apellido": "Fernandez",
+      "dni": "23657876",
+      "contacto": "3819937430",
+      "Direccion": "Las piedras 234 SMT",
+      "direccion": "san juan 565 SMT"
     }
   ]
 }

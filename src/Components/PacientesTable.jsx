@@ -22,6 +22,8 @@ const PacientesTable = () => {
     nombre: "",
     apellido: "",
     dni: "",
+    contacto: "",
+    Direccion: "",
   });
   const navigate = useNavigate();
 
@@ -73,7 +75,9 @@ const PacientesTable = () => {
       !formData.id ||
       !formData.nombre ||
       !formData.apellido ||
-      !formData.dni
+      !formData.dni ||
+      !formData.contacto ||
+      !formData.direccion
     ) {
       alert("Completá todos los campos");
       return; // Si un campo está vacío, muestra una alerta y detiene la función.
@@ -83,7 +87,7 @@ const PacientesTable = () => {
     await agregarPaciente(formData, () => {
       cargarPacientes(); // Actualiza la tabla con el nuevo paciente.
       // Resetea los campos del formulario para que el usuario pueda agregar otro paciente.
-      setFormData({ id: "", nombre: "", apellido: "", dni: "" });
+      setFormData({ id: "", nombre: "", apellido: "", dni: "", contacto: "", direccion: "" });
     });
   };
 
@@ -157,6 +161,26 @@ const PacientesTable = () => {
               className="w-75"
             />
           </Form.Group>
+          <Form.Group className="mb-2">
+            <Form.Label>Contacto</Form.Label>
+            <Form.Control
+              type="text"
+              name="contacto"
+              value={formData.contacto}
+              onChange={handleChange}
+              className="w-75"
+            />
+          </Form.Group>
+          <Form.Group className="mb-2">
+            <Form.Label>Direccion</Form.Label>
+            <Form.Control
+              type="text"
+              name="Direccion"
+              value={formData.direccion}
+              onChange={handleChange}
+              className="w-75"
+            />
+          </Form.Group>
           {/* El botón de tipo 'submit' activará la función 'onSubmit' del formulario. */}
           <Button variant="primary" type="submit" className="mt-2">
             Agregar Paciente
@@ -175,6 +199,8 @@ const PacientesTable = () => {
               <th>Nombre</th>
               <th>Apellido</th>
               <th>DNI</th>
+              <th>Contacto</th>
+              <th>Direccion</th>
               <th>Acciones</th>
             </tr>
           </thead>
@@ -188,6 +214,8 @@ const PacientesTable = () => {
                 <td>{pac.nombre}</td>
                 <td>{pac.apellido}</td>
                 <td>{pac.dni}</td>
+                <td>{pac.contacto}</td> 
+                <td>{pac.direccion}</td>
                 <td>
                   <Button
                     variant="outline-info"

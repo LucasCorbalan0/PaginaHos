@@ -24,6 +24,8 @@ const DoctorTable = () => {
     nombre: "",
     apellido: "",
     especialidad: "",
+    contacto: "",
+    direccion: "",
   });
 
   // Hook de react-router-dom que nos permite navegar a otras páginas.
@@ -82,7 +84,9 @@ const DoctorTable = () => {
       !formData.id ||
       !formData.nombre ||
       !formData.apellido ||
-      !formData.especialidad
+      !formData.especialidad ||
+      !formData.contacto ||
+      !formData.direccion
     ) {
       alert("Completá todos los campos");
       return; // Detiene la ejecución si la validación falla.
@@ -92,7 +96,7 @@ const DoctorTable = () => {
     await agregarDoctor(formData, () => {
       cargarDoctores(); // Vuelve a cargar la lista de doctores para mostrar el nuevo registro.
       // Limpia el formulario reseteando el estado 'formData'.
-      setFormData({ id: "", nombre: "", apellido: "", especialidad: "" });
+      setFormData({ id: "", nombre: "", apellido: "", especialidad: "", contacto: "", direccion: "" });
     });
   };
 
@@ -173,6 +177,26 @@ const DoctorTable = () => {
               className="w-75"
             />
           </Form.Group>
+          <Form.Group className="mb-2">
+            <Form.Label>Contacto</Form.Label>
+            <Form.Control
+              type="text"
+              name="contacto"
+              value={formData.contacto}
+              onChange={handleChange}
+              className="w-75"
+            />
+          </Form.Group>
+          <Form.Group className="mb-2">
+            <Form.Label>Dirección</Form.Label>
+            <Form.Control
+              type="text"
+              name="direccion"
+              value={formData.direccion}
+              onChange={handleChange}
+              className="w-75"
+            />
+          </Form.Group>
           {/* Botón de tipo 'submit' que, al ser presionado dentro de un <Form>, dispara el evento onSubmit del formulario. */}
           <Button variant="primary" type="submit" className="mt-2">
             Agregar Doctor
@@ -191,6 +215,8 @@ const DoctorTable = () => {
               <th>Nombre</th>
               <th>Apellido</th>
               <th>Especialidad</th>
+              <th>Contacto</th>
+              <th>Dirección</th>
               <th>Acciones</th>
             </tr>
           </thead>
@@ -203,6 +229,8 @@ const DoctorTable = () => {
                 <td>{doc.nombre}</td>
                 <td>{doc.apellido}</td>
                 <td>{doc.especialidad}</td>
+                <td>{doc.contacto}</td>
+                <td>{doc.direccion}</td>
                 <td>
                   <Button
                     variant="outline-info"

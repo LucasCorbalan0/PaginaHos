@@ -134,7 +134,6 @@ const Main = () => {
     </div>
 
     </section>
-    /* Carousel Section */
 
   );
 };

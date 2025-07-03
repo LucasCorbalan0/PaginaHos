@@ -12,25 +12,17 @@ const PaciEdit = () => {
 
   const getPaciente = async () => {
     try {
-      // Hacemos la petición GET para obtener los datos del paciente con el 'id' actual.
       const response = await axios.get(`${URL_PACIENTES}/${id}`);
-      // Actualizamos el estado con los datos recibidos de la API.
       setFormData(response.data);
     } catch (error) {
-      // Si ocurre un error, lo mostramos en la consola sin interrumpir al usuario con una alerta.
       console.error("Error al cargar datos del paciente:", error);
     }
   };
 
-  // 'useEffect' se ejecuta después de que el componente se renderiza.
   useEffect(() => {
-    // Llamamos a la función que busca los datos.
     getPaciente();
-  }, [id]); // El efecto se volverá a ejecutar si el 'id' de la URL cambia.
+  }, [id]);
 
-  // --- MANEJADORES DE EVENTOS DEL FORMULARIO ---
-
-  // Se activa cada vez que el usuario modifica un campo del formulario.
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -39,16 +31,12 @@ const PaciEdit = () => {
     });
   };
 
-  // Se ejecuta cuando el usuario envía el formulario.
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Hacemos una petición PUT para actualizar los datos del paciente.
       await axios.put(`${URL_PACIENTES}/${id}`, formData);
-      // Si la actualización es exitosa, redirigimos al usuario a la lista de pacientes.
       navigate(PACIENTES);
     } catch (error) {
-      // Si la actualización falla, mostramos el error en la consola.
       console.error("Error al actualizar el paciente:", error);
     }
   };

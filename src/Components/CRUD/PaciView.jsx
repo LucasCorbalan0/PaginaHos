@@ -29,7 +29,6 @@ const PaciView = () => {
     fetchPaciente()
   }, [id])
 
-  // Estilos simples y tranquilos
   const pageStyle = {
     backgroundColor: "#f8f9fa",
     minHeight: "100vh",

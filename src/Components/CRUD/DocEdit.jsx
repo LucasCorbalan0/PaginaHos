@@ -12,19 +12,16 @@ const DocEdit = () => {
 
   const getDoctor = async () => {
     try {
-      // Hacemos una petición GET a la API para obtener el doctor con el 'id' específico.
-      const response = await axios.get(`${URL_DOCTORES}/${id}`); // Actualizamos el estado 'formData' con los datos recibidos.
+      const response = await axios.get(`${URL_DOCTORES}/${id}`);
       setFormData(response.data);
     } catch (error) {
-      // Si hay un error, lo mostramos en la consola sin interrumpir al usuario con una alerta.
       console.error("Error al cargar los datos del doctor:", error);
     }
-  }; // 'useEffect' ejecuta el código que tiene adentro solo cuando el componente se monta por primera vez.
+  };
 
   useEffect(() => {
-    // Llamamos a la función para que se ejecute al cargar el componente.
     getDoctor();
-  }, [id]); // Mantenemos [id] como dependencia por si el ID en la URL pudiera cambiar dinámicamente. // --- MANEJADORES DE EVENTOS --- // Esta función se ejecuta cada vez que el usuario escribe en un campo.
+  }, [id]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -32,19 +29,17 @@ const DocEdit = () => {
       ...formData,
       [name]: value,
     });
-  }; // Esta función se ejecuta cuando se envía el formulario.
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Enviamos la petición PUT para actualizar el doctor.
-      await axios.put(`${URL_DOCTORES}/${id}`, formData); // Si todo sale bien, redirigimos al usuario a la lista de doctores.
+      await axios.put(`${URL_DOCTORES}/${id}`, formData);
       navigate(DOCTORES);
     } catch (error) {
-      // Si la actualización falla, lo mostramos en la consola.
       console.error("Error al actualizar el doctor:", error);
     }
-  }; // --- RENDERIZADO DEL COMPONENTE (LO QUE SE VE EN PANTALLA) ---
+  };
 
   return (
     <Container className="mt-4">

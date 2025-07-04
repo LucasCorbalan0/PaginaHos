@@ -1,7 +1,3 @@
-/*
-  Este archivo define los estilos para el contenedor de la página de inicio de sesión,
-  haciéndolo ocupar toda la altura de la ventana y ocultando el desbordamiento vertical.
-*/
 .login-page-fullscreen {
   height: 100vh;
   overflow-y: hidden;

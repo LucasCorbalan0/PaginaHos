@@ -29,7 +29,6 @@ const PaciView = () => {
     fetchPaciente()
   }, [id])
 
-  // Estilos simples y tranquilos
   const pageStyle = {
     backgroundColor: "#f8f9fa",
     minHeight: "100vh",
@@ -146,6 +145,22 @@ const PaciView = () => {
               </Col>
               <Col md={8} style={dniStyle}>
                 {paciente.dni}
+              </Col>
+            </Row>
+            <Row style={rowStyle}>
+              <Col md={4} style={labelStyle}>
+                Contacto:
+              </Col>
+              <Col md={8} style={valueStyle}>
+                {paciente.contacto}
+              </Col>
+            </Row>
+            <Row style={rowStyle}>
+              <Col md={4} style={labelStyle}>
+                Dirección:
+              </Col>
+              <Col md={8} style={valueStyle}>
+                {paciente.direccion}
               </Col>
             </Row>
 

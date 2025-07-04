@@ -3,10 +3,6 @@ import Header from '../Components/Header';
 import PacientesTable from '../Components/PacientesTable';
 import Footer from '../Components/Footer';
 
-/**
- * @component PacientePage
- * @description La página principal para administrar pacientes, que incluye el encabezado, la tabla de pacientes y el pie de página.
- */
 const PacientePage = () => {
   return (
     <div>

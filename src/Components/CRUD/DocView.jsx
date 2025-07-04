@@ -29,7 +29,6 @@ const DocView = () => {
     fetchDoctor()
   }, [id])
 
-  // Estilos simples y tranquilos
   const pageStyle = {
     backgroundColor: "#f8f9fa",
     minHeight: "100vh",
@@ -42,8 +41,8 @@ const DocView = () => {
     borderRadius: "12px",
     boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
     backgroundColor: "white",
-    maxWidth: "900px", // Agregar esta línea
-    margin: "0 auto", // Agregar esta línea para centrar
+    maxWidth: "900px",
+    margin: "0 auto"
   }
 
   const headerStyle = {
@@ -144,6 +143,22 @@ const DocView = () => {
               </Col>
               <Col md={8} style={specialtyStyle}>
                 {doctor.especialidad}
+              </Col>
+            </Row>
+            <Row style={rowStyle}>
+              <Col md={4} style={labelStyle}>
+                Contacto:
+              </Col>
+              <Col md={8} style={valueStyle}>
+                {doctor.contacto}
+              </Col>
+            </Row>
+            <Row style={rowStyle}>
+              <Col md={4} style={labelStyle}>
+                Dirección:
+              </Col>
+              <Col md={8} style={valueStyle}>
+                {doctor.direccion}
               </Col>
             </Row>
 
